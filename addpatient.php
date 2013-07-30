@@ -10,6 +10,13 @@
             include ('questionSheet.php');
         }else{
         }
+?>
+    <form name='addPatient' action='addpatient.php' method='post'>
+    <?php
+        echo "<input type='hidden' name='user' value='".$_POST['user']."'>";
     ?>
+    <input type='submit' value='add a new patient profile'>
+    </form>
+
     </body>
 </html>

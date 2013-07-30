@@ -10,6 +10,11 @@
 <div class = 'PatientSheet'>
     Patient Record
 </div>
+<div id = 'PatientInfo'>
+<?php
+    include('getPatientSheet.php');
+?> 
+</div>
 </div>
 <?php
         session_commit();

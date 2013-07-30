@@ -7,6 +7,7 @@
     if(!$connect) 
         echo "connect Error!";
     else {
+        echo "<div id='patientRecord'>";
         $user = $_POST['user'];
         echo "<form name='input' action='javascript:saveAnswerSheet(\"".$user."\")' method='post'>";
         $questions = mysqli_query($connect,"select * from Question where questionID in (select questionId from QuestionSheet where QuestionSheetId=1) order by questionId;");
@@ -25,6 +26,7 @@
          }
          echo "<input type='submit' name='savepatient' value='save'>";
          echo "</form>";
+         echo "</div>";
     }
     mysqli_close($connect);
 

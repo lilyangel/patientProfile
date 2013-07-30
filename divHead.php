@@ -7,10 +7,10 @@ echo '
                 <li class="Discussions Highlight"><a href="/vanilla-core-2-0-18-8/index.php?p=/discussions">Discussions</a></li>
                 <li class="Activity"><a href="/vanilla-core-2-0-18-8/index.php?p=/activity">Activity</a></li>
                 <li class="Inbox"><a href="/vanilla-core-2-0-18-8/index.php?p=/messages/all">Inbox</a></li>
-                <li class="UserNotifications"><a href="/vanilla-core-2-0-18-8/index.php?p=/profile/tt2">tt2</a></li>
+                <li class="UserNotifications"><a href="/vanilla-core-2-0-18-8/index.php?p=/profile/'.$_POST['user'].'">'.$_POST['user'].'</a></li>
                 <li class="UserNotifications">
                     <form method="post" action="http://192.168.16.133/profile/patients.php" name="subPatient">
-                        <input type="hidden" value="tt2" name="user">
+                        <input type="hidden" value="'.$_POST['user'].'" name="user">
                         <a href="javascript:document.subPatient.submit();">Patients</a>
                     </form></li>
                 <li class="NonTab SignOut"><a href="/vanilla-core-2-0-18-8/index.php?p=/entry/signout&amp;TransientKey=CLGG5WVGWWRC">Sign Out</a></li>
